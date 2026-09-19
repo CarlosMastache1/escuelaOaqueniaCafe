@@ -14,7 +14,7 @@ environ.Env.read_env(BASE_DIR / '.env')
 
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1', 'escuelaoaqueniacafe2.onrender.com'])
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1', 'escuelaoaqueniacafe2.onrender.com', 'escuelaoaxaqueñadelcafe.com', 'www.escuelaoaxaqueñadelcafe.com', 'xn--escuelaoaxaqueadelcafe-xec.com',  'www.xn--escuelaoaxaqueadelcafe-xec.com'])
 
 INSTALLED_APPS = [
     'django.contrib.admin',

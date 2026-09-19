@@ -197,7 +197,7 @@
   }
 
   /* ==================================================
-     Formulario de contacto
+      Formulario de contacto
   ================================================== */
   function initContactForm() {
     const form = document.getElementById('contactForm');
@@ -212,18 +212,28 @@
       const subject = formData.get('asunto');
       const message = formData.get('mensaje');
 
-      // Validación básica
       if (!name || !email || !subject || !message) {
-        showFormError('Por favor, completa todos los campos.');
+        Swal.fire({
+          icon: 'error',
+          title: 'Campos incompletos',
+          text: 'Por favor, completa todos los campos.',
+          confirmButtonColor: '#C14A2A',
+          confirmButtonText: 'Entendido',
+        });
         return;
       }
 
       if (!isValidEmail(email)) {
-        showFormError('Por favor, ingresa un email válido.');
+        Swal.fire({
+          icon: 'error',
+          title: 'Email inválido',
+          text: 'Por favor, ingresa un email válido.',
+          confirmButtonColor: '#C14A2A',
+          confirmButtonText: 'Entendido',
+        });
         return;
       }
 
-      // Simular envío
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
 
@@ -234,38 +244,22 @@
         form.reset();
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
-        showFormSuccess('¡Gracias! Tu mensaje ha sido enviado. Nos pondremos en contacto pronto.');
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Mensaje enviado',
+          text: '¡Gracias! Tu mensaje ha sido enviado. Nos pondremos en contacto pronto.',
+          confirmButtonColor: '#C14A2A',
+          confirmButtonText: 'Continuar',
+          timer: 3000,
+          timerProgressBar: true,
+        });
       }, 1200);
     });
 
     function isValidEmail(email) {
       const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return re.test(String(email).toLowerCase());
-    }
-
-    function showFormError(message) {
-      showFormMessage(message, 'error');
-    }
-
-    function showFormSuccess(message) {
-      showFormMessage(message, 'success');
-    }
-
-    function showFormMessage(message, type) {
-      // Remove existing message
-      const existing = form.querySelector('.form-message');
-      if (existing) existing.remove();
-
-      const msgDiv = document.createElement('div');
-      msgDiv.className = `form-message form-message--${type}`;
-      msgDiv.textContent = message;
-      form.appendChild(msgDiv);
-
-      // Auto-remove after 5 seconds
-      setTimeout(() => {
-        msgDiv.style.opacity = '0';
-        setTimeout(() => msgDiv.remove(), 400);
-      }, 5000);
     }
   }
 

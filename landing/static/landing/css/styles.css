@@ -1384,32 +1384,6 @@ img, picture, video, canvas, svg {
   margin-top: 0.5rem;
 }
 
-.form-message {
-  padding: 0.875rem 1.25rem;
-  border-radius: var(--border-radius);
-  font-size: var(--font-size-sm);
-  font-weight: 500;
-  margin-top: var(--space-sm);
-  animation: slideIn 0.3s ease;
-}
-
-.form-message--error {
-  background: rgba(193, 74, 42, 0.1);
-  border: 1px solid var(--terracotta);
-  color: var(--terracotta-light);
-}
-
-.form-message--success {
-  background: rgba(61, 110, 77, 0.1);
-  border: 1px solid var(--green-medium);
-  color: var(--green-dark);
-}
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* === Animations === */
 [data-animate] {
   opacity: 0;
