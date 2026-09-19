@@ -1,0 +1,430 @@
+{% extends 'landing/base.html' %}
+
+{% block title %}Escuela Oaxaqueña del Café — Formación en Café de Especialidad{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('{% static 'landing/img/hero-bg.jpg' %}');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-particles">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+        <div class="particle particle-6"></div>
+    </div>
+
+    <div class="hero-content container" data-animate="fadeUp">
+        <div class="hero-badge" data-animate="fadeRight" data-delay="0.1">
+            <span class="material-symbols-outlined">coffee</span>
+            <span>Especialidad • Sostenible • Tradición Oaxaqueña</span>
+        </div>
+
+        <h1 class="hero-title" data-animate="fadeUp" data-delay="0.2">
+            Escuela Oaxaqueña
+            <span class="hero-title-accent">del Café</span>
+        </h1>
+
+        <p class="hero-subtitle" data-animate="fadeUp" data-delay="0.3">
+            Formación en café de especialidad desde el cultivo hasta la taza. Capacitación técnica, cata sensorial y comercio directo con productores oaxaqueños.
+        </p>
+
+        <div class="hero-cta" data-animate="fadeUp" data-delay="0.4">
+                <a href="#programas" class="btn btn-primary">
+                    <span>Conoce nuestros programas</span>
+                    <span class="material-symbols-outlined btn-icon">arrow_forward</span>
+                </a>
+            <a href="#contacto" class="btn btn-secondary">
+                <span>Contáctanos</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-scroll" data-animate="fadeUp" data-delay="0.6">
+        <span class="scroll-text">Desliza hacia abajo</span>
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about section" id="nosotros">
+    <div class="container">
+        <div class="section-header" data-animate="fadeUp">
+            <span class="section-tag">Nuestra historia</span>
+            <h2 class="section-title">Conoce a la Escuela Oaxaqueña del Café</h2>
+            <p class="section-subtitle">Formamos capital humano para elevar la calidad de la cadena productiva del café, desde el cultivo hasta el consumo.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text" data-animate="fadeRight">
+                <blockquote class="quote">
+                    <span class="quote-mark">"</span>
+                    El café de especialidad en Oaxaca es más que una bebida: es una tradición que conecta a las comunidades cafetaleras con el mundo.
+                    <span class="quote-mark quote-mark-bottom">"</span>
+                </blockquote>
+                <p class="about-paragraph">
+                    La <strong>Escuela Oaxaqueña del Café</strong>, coordinada por <strong>Efraín Aragón Ibáñez</strong>, forma parte del equipo técnico de la <strong>Secretaría de Fomento Agroalimentario y Desarrollo Rural (Sefader)</strong>. Nuestro propósito es formar capital humano que participe en la cadena productiva del aromático para elevar la calidad de los servicios desde el cultivo hasta el consumo.
+                </p>
+                <p class="about-paragraph">
+                    Oaxaca ocupa el <strong>cuarto lugar nacional en producción de café</strong> y más del <strong>90% del cultivo se realiza bajo sombra</strong>, preservando miles de hectáreas de bosques y selvas. La cafeticultura genera una derrama económica de aproximadamente <strong>314.2 millones de pesos</strong>, beneficiando a más de <strong>70 mil productores</strong>.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Lugar nacional en producción</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">Café bajo sombra</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">70k+</span>
+                        <span class="stat-label">Productores beneficiados</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image" data-animate="fadeLeft">
+                <div class="image-wrapper">
+                    <img src="{% static 'landing/img/about-coffee.jpg' %}" alt="Cafetal en Oaxaca" class="about-img">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="coordinator-card">
+                    <div class="coordinator-img">
+                        <span class="material-symbols-outlined icon-xxl">person</span>
+                    </div>
+                    <div class="coordinator-info">
+                        <h4>Efraín Aragón Ibáñez</h4>
+                        <p class="coordinator-role"><span class="material-symbols-outlined icon-sm">person</span> Coordinador Escuela Oaxaqueña del Café</p>
+                        <p class="coordinator-affil"><span class="material-symbols-outlined icon-sm">account_balance</span> Sefader Oaxaca</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section class="programs section" id="programas">
+    <div class="container">
+        <div class="section-header center" data-animate="fadeUp">
+            <span class="section-tag">Formación</span>
+            <h2 class="section-title">Nuestros Programas</h2>
+            <p class="section-subtitle">Cursos y capacitaciones diseñadas para impulsar el café de especialidad oaxaqueño.</p>
+        </div>
+
+        <div class="programs-grid">
+            <div class="program-card" data-animate="fadeUp" data-delay="0.1">
+                <div class="program-icon">
+                    <span class="material-symbols-outlined icon-lg">search</span>
+                </div>
+                <div class="program-content">
+                    <h3>Cata Sensorial</h3>
+                    <p>Desarrolla el sentido del gusto y olfato para identificar aroma, sabor y defectos del café de especialidad.</p>
+                    <a href="#contacto" class="program-link">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="program-hover-bg"></div>
+            </div>
+
+            <div class="program-card" data-animate="fadeUp" data-delay="0.2">
+                <div class="program-icon">
+                    <span class="material-symbols-outlined icon-lg">local_cafe</span>
+                </div>
+                <div class="program-content">
+                    <h3>Barismo y Preparación</h3>
+                    <p>Domina las técnicas de extracción y preparación del café para ofrecer la mejor experiencia sensorial.</p>
+                    <a href="#contacto" class="program-link">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="program-hover-bg"></div>
+            </div>
+
+            <div class="program-card" data-animate="fadeUp" data-delay="0.3">
+                <div class="program-icon">
+                    <span class="material-symbols-outlined icon-lg">eco</span>
+                </div>
+                <div class="program-content">
+                    <h3>Cafeticultura Sostenible</h3>
+                    <p>Aprende prácticas agroecológicas que preservan el medio ambiente y mejoran la calidad del grano.</p>
+                    <a href="#contacto" class="program-link">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="program-hover-bg"></div>
+            </div>
+
+            <div class="program-card" data-animate="fadeUp" data-delay="0.4">
+                <div class="program-icon">
+                    <span class="material-symbols-outlined icon-lg">sell</span>
+                </div>
+                <div class="program-content">
+                    <h3>Comercio Directo</h3>
+                    <p>Conectamos productores con consumidores especializados para un comercio justo y transparente.</p>
+                    <a href="#contacto" class="program-link">
+                        <span>Saber más</span>
+                        <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="program-hover-bg"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section class="events section" id="eventos">
+    <div class="container">
+        <div class="section-header" data-animate="fadeUp">
+            <span class="section-tag">Eventos</span>
+            <h2 class="section-title">Convención del Café Oaxaqueño 2026</h2>
+            <p class="section-subtitle">Un encuentro que impulsa la comercialización directa, el consumo y el posicionamiento del café de especialidad oaxaqueño.</p>
+        </div>
+
+        <div class="event-featured" data-animate="fadeUp" data-delay="0.1">
+            <div class="event-image">
+                <img src="{% static 'landing/img/event-coffee.jpg' %}" alt="Convención del Café Oaxaqueño" class="event-img">
+            </div>
+            <div class="event-details">
+                <div class="event-meta">
+                    <span class="event-date">14 - 15 de agosto, 2026</span>
+                    <span class="event-location">Plaza de la Danza, Oaxaca de Juárez</span>
+                </div>
+                <h3>¡Mercados diferenciados y café sostenible!</h3>
+                <p>La Convención del Café Oaxaqueño reúne a productores, compradores especializados, tostadores, baristas, investigadores y representantes de la industria cafetalera. Incluye catas y degustaciones, subasta de microlotes y talleres de divulgación científica.</p>
+                <div class="event-stats">
+                    <div class="event-stat">
+                        <span class="stat">350+</span>
+                        <span class="stat-desc">Productores atendidos</span>
+                    </div>
+                    <div class="event-stat">
+                        <span class="stat">44</span>
+                        <span class="stat-desc">Microlotes seleccionados</span>
+                    </div>
+                    <div class="event-stat">
+                        <span class="stat">700+</span>
+                        <span class="stat-desc">Muestras evaluadas</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-sm">Saber más del evento</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery section" id="galeria">
+    <div class="container">
+        <div class="section-header center" data-animate="fadeUp">
+            <span class="section-tag">Galería</span>
+            <h2 class="section-title">Ruta del Café Pluma</h2>
+            <p class="section-subtitle">Imágenes del proceso cafetalero oaxaqueño, desde la cosecha hasta la taza.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-animate="fadeUp" data-delay="0.1">
+                <div class="gallery-wrapper">
+                    <img src="{% static 'landing/img/gallery-item-1.jpg' %}" alt="Cafetal en Oaxaca">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Cultivo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-animate="fadeUp" data-delay="0.2">
+                <div class="gallery-wrapper">
+                    <img src="{% static 'landing/img/gallery-item-2.jpg' %}" alt="Tostado de café">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Procesamiento</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-animate="fadeUp" data-delay="0.3">
+                <div class="gallery-wrapper">
+                    <img src="{% static 'landing/img/gallery-item-3.jpg' %}" alt="Barista preparando café">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Barismo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-animate="fadeUp" data-delay="0.4">
+                <div class="gallery-wrapper">
+                    <img src="{% static 'landing/img/gallery-item-4.jpg' %}" alt="Café recién servido">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Degustación</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-animate="fadeUp" data-delay="0.5">
+                <div class="gallery-wrapper">
+                    <img src="{% static 'landing/img/gallery-item-5.jpg' %}" alt="Productores cafetaleros">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Productores</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-animate="fadeUp" data-delay="0.6">
+                <div class="gallery-wrapper">
+                    <img src="{% static 'landing/img/gallery-item-6.jpg' %}" alt="Café de especialidad">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Especialidad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials section" id="testimonios">
+    <div class="container">
+        <div class="section-header center" data-animate="fadeUp">
+            <span class="section-tag">Testimonios</span>
+            <h2 class="section-title">Voces del Café</h2>
+            <p class="section-subtitle">Lo que dicen quienes forman parte de la cadena cafetalera oaxaqueña.</p>
+        </div>
+
+        <div class="testimonial-slider" data-animate="fadeUp" data-delay="0.1">
+            <div class="testimonial-track" id="testimonialTrack">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Gracias a las capacitaciones de la Escuela Oaxaqueña del Café, hemos mejorado la calidad de nuestro grano en un 40% y hemos podido comercializar directamente a precios justos."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <span class="material-symbols-outlined icon-xxl">person</span>
+                            </div>
+                            <div class="author-info">
+                                <h4><span class="material-symbols-outlined icon-sm">person</span> Martha Perez Cruz</h4>
+                                <p>Productora cafetalera, Municipio de San Juan Bautista Tuxtepec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "La Escuela Oaxaqueña del Café nos enseñó a identificar los perfiles sensoriales de cada región. Ahora nuestros cafés destacan en todo el país."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <span class="material-symbols-outlined icon-xxl">person</span>
+                            </div>
+                            <div class="author-info">
+                                <h4><span class="material-symbols-outlined icon-sm">person</span> Heladio García España</h4>
+                                <p>Barista y tostador, Taller de Barismo Oaxaca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Participar en la Convención del Café fue transformador. Conocí nuevos mercados y conecté directamente con compradores internacionales."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <span class="material-symbols-outlined icon-xxl">person</span>
+                            </div>
+                            <div class="author-info">
+                                <h4><span class="material-symbols-outlined icon-sm">person</span> Coordinador de la Convención 2026</h4>
+                                <p>Efraín Aragón Ibáñez, Sefader Oaxaca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-nav">
+                <button class="nav-dot active" data-slide="0" aria-label="Testimonio 1"></button>
+                <button class="nav-dot" data-slide="1" aria-label="Testimonio 2"></button>
+                <button class="nav-dot" data-slide="2" aria-label="Testimonio 3"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact section" id="contacto">
+    <div class="container">
+        <div class="section-header center" data-animate="fadeUp">
+            <span class="section-tag">Contacto</span>
+            <h2 class="section-title">Ponte en Contacto</h2>
+            <p class="section-subtitle">¿Listo para transformar tu café? Escríbenos y únete a nuestra comunidad.</p>
+        </div>
+
+        <div class="contact-grid" data-animate="fadeUp" data-delay="0.1">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><span class="material-symbols-outlined">location_on</span></div>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Oaxaca de Juárez, Oax., México<br><span class="contact-accent">En colaboración con Sefader</span></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><span class="material-symbols-outlined">mail</span></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p class="contact-accent">contacto@escuelaoaxcafe.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><span class="material-symbols-outlined">phone</span></div>
+                    <div>
+                        <h4>Teléfono</h4>
+                        <p class="contact-accent">+52 (951) 123 4567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><span class="material-symbols-outlined">schedule</span></div>
+                    <div>
+                        <h4>Horario</h4>
+                        <p>Lunes - Viernes: 9:00 - 18:00<br>Sábado: 10:00 - 14:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" required placeholder=" ">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="asunto" name="asunto" required placeholder=" ">
+                    <label for="asunto">Asunto</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder=" "></textarea>
+                    <label for="mensaje">Mensaje</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span>Enviar mensaje</span>
+                    <span class="material-symbols-outlined btn-icon">send</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

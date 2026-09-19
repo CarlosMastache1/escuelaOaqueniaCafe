@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="g6-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C14A2A"/>
+      <stop offset="100%" stop-color="#8B7355"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g6-bg)"/>
+  <g opacity="0.1">
+    <path d="M50 340 Q100 330 150 340 Q200 350 250 335 Q300 320 350 335 Q400 350 450 330 Q500 310 550 330 L550 380 L50 380 Z" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(200, 150)">
+    <path d="M0 0 C-10 10-15 25-10 40 C-5 55 15 60 30 55 C45 50 55 35 50 20 C45 5 25-5 10 0 C5 5 0 10 0 15 C0 20-5 25-10 25 C-5 25 5 20 15 15 C25 10 35 10 45 15" fill="#3D2B1F"/>
+    <ellipse cx="15" cy="5" rx="8" ry="3" fill="#D4AF37"/>
+    <path d="M-5 20 Q0 15 10 15 Q20 15 25 20" stroke="#8B7355" stroke-width="2" fill="none"/>
+    <ellipse cx="0" cy="30" rx="12" ry="4" fill="#3D2B1F" opacity="0.5"/>
+  </g>
+  <g transform="translate(400, 250)">
+    <path d="M0 0 L0 -80 C0-85-5-90-10-90 C-15-90-20-85-20-80 L-20-40 C-20-35-15-30-10-30 C-5-30 0-35 0-40 Z" fill="#F5E9DA" stroke="#3D2B1F" stroke-width="1"/>
+    <path d="M0 -90 C5-95 15-95 20-90 L20 0 L0 0 Z" fill="#F5E9DA"/>
+    <ellipse cx="10" cy="-50" rx="10" ry="2" fill="#3D2B1F" opacity="0.2"/>
+    <ellipse cx="10" cy="-70" rx="10" ry="2" fill="#3D2B1F" opacity="0.2"/>
+    <ellipse cx="10" cy="-30" rx="10" ry="2" fill="#3D2B1F" opacity="0.2"/>
+    <path d="M-5 -50 L25 -50 M-5 -70 L25 -70 M-5 -30 L25 -30" stroke="#3D2B1F" stroke-width="1" stroke-linecap="round"/>
+    <circle cx="10" cy="0" r="8" fill="#D4AF37"/>
+    <circle cx="10" cy="0" r="3" fill="#3D2B1F"/>
+  </g>
+  <g transform="translate(500, 100)">
+    <path d="M0 0 L0 -60 C0-65-5-70-10-70 C-15-70-20-65-20-60 L-20 0 C-20 5-15 10-10 10 C-5 10 0 5 0 0 Z" fill="#F5E9DA" stroke="#3D2B1F" stroke-width="1"/>
+    <ellipse cx="-10" cy="-30" rx="8" ry="1.5" fill="#3D2B1F" opacity="0.2"/>
+    <ellipse cx="-10" cy="-40" rx="8" ry="1.5" fill="#3D2B1F" opacity="0.2"/>
+    <ellipse cx="-10" cy="-20" rx="8" ry="1.5" fill="#3D2B1F" opacity="0.2"/>
+    <circle cx="0" cy="0" r="8" fill="#D4AF37"/>
+    <circle cx="0" cy="0" r="3" fill="#3D2B1F"/>
+  </g>
+  <g transform="translate(100, 200)">
+    <circle cx="0" cy="0" r="25" fill="#3D2B1F"/>
+    <circle cx="0" cy="0" r="12" fill="#C14A2A"/>
+    <ellipse cx="0" cy="0" rx="12" ry="3" fill="#D4AF37" opacity="0.3"/>
+  </g>
+</svg>

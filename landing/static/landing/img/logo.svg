@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" width="200" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D6B97A"/>
+      <stop offset="100%" stop-color="#C9A66B"/>
+    </gradient>
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D46B3D"/>
+      <stop offset="100%" stop-color="#C14A2A"/>
+    </gradient>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1" transform="translate(0,2)">
+    <path d="M8 52 C4 48, 2 40, 4 32 C6 24, 12 18, 20 16 C28 14, 36 18, 40 26 C44 34, 42 44, 36 50 C30 56, 22 58, 14 56" fill="#3D6E4D" stroke="none"/>
+    <path d="M40 26 L40 14 C40 10, 44 8, 48 10 C52 12, 54 16, 54 20 C54 24, 50 28, 46 30" fill="#C14A2A" stroke="none"/>
+    <path d="M44 30 C42 28, 40 26, 40 24 C40 22, 42 20, 44 20 C46 20, 48 22, 48 24 C48 26, 46 28, 44 30 Z" fill="#3D2B1F" stroke="none"/>
+    <ellipse cx="41" cy="18" rx="2" ry="1" fill="#3D2B1F" stroke="none"/>
+    <path d="M36 50 L60 50 L60 44 L36 44 Z" fill="#8D6E63" stroke="none" opacity="0.4"/>
+    <path d="M38 44 L38 40 C38 38, 40 36, 42 36 C44 36, 46 38, 46 40 L46 44" fill="none" stroke="#3D2B1F" stroke-width="2"/>
+  </g>
+  <text x="68" y="40" fill="#3D2B1F" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="700">
+    <tspan x="68">Escuela</tspan>
+    <tspan x="68" dy="1.4em">Oaxaqueña</tspan>
+  </text>
+  <text x="142" y="40" fill="#C14A2B" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="700">
+    <tspan x="142">del</tspan>
+    <tspan x="142" dy="1.4em">Café</tspan>
+  </text>
+  <rect x="64" y="44" width="92" height="1.5" fill="url(#goldGrad)" rx="1"/>
+</svg>
